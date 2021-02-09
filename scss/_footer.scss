@@ -1,0 +1,40 @@
+
+/* Footer */
+
+footer{
+    margin-top: 3rem;
+    justify-content: center; 
+    align-items: center;    
+    
+    span{
+        font-size: .8rem;
+        color:$color-darker;
+    }
+ 
+} 
+
+@media (max-width: 600px) {
+    
+    footer span{
+        display: flex;
+        margin-top: 1rem;
+        gap: 2px;
+        justify-content: center;
+    }
+
+
+header .logoNavv {
+    height: 5rem;
+    display: flex;}
+      
+  header .logoNavv img {
+    height: 3rem;
+    margin-top: 0;
+    margin-left: -2rem;
+  }
+
+  .navbar {
+    margin-top: -4rem;
+  }
+}
+

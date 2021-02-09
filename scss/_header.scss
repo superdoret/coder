@@ -1,0 +1,41 @@
+/* Header */
+@import "colores";
+header {
+    .logoNavv {
+        height: 5rem;
+        display: flex;
+        justify-content: center;    
+        align-items: center;        
+    }
+    .logoNavv img{
+        height: 5rem;
+        margin-top: 2rem;
+    }
+}
+
+.navbar a {
+    font-size: 14px;
+    color: $color-darker;
+}
+
+.bg-light{
+    background-color: transparent !important;
+}
+
+.navbar-nav .nav-item .nav-link {
+    margin-top: 1rem;
+}
+
+.navbar-nav .nav-item .nav-link a {
+    color: $color-darkBrown;
+}
+   
+
+
+  
+
+
+
+
+
+ 

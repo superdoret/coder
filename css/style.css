@@ -1,0 +1,327 @@
+@charset "UTF-8";
+/* General */
+body {
+  height: 100%;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif; }
+
+/* General */
+/* Header */
+/* Colores */
+header .logoNavv {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+header .logoNavv img {
+  height: 5rem;
+  margin-top: 2rem; }
+
+.navbar a {
+  font-size: 14px;
+  color: #444444; }
+
+.bg-light {
+  background-color: transparent !important; }
+
+.navbar-nav .nav-item .nav-link {
+  margin-top: 1rem; }
+
+.navbar-nav .nav-item .nav-link a {
+  color: #564D4A; }
+
+/* Header */
+/* Landing - index.html*/
+main .intro__img {
+  width: 80%; }
+
+/* Landing - index.html*/
+/* Galerias & Main Content */
+.sectionDescription {
+  font-size: .8rem; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  .sectionDescription h5 {
+    color: #564D4A;
+    animation: fadeIn 3s; }
+  .sectionDescription h2 {
+    color: #564D4A;
+    margin-top: .5rem; }
+  .sectionDescription p {
+    color: #6E6561;
+    animation: fadeIn 3s; }
+  .sectionDescription .sectionDescription__boton {
+    /* Btn cv - sobremi.html */
+    display: -webkit-flex;
+    margin: 0 auto;
+    width: 160px;
+    height: 40px;
+    margin-top: 16px; }
+  .sectionDescription .carousel-fade .carousel-inner .active {
+    opacity: 1; }
+  .sectionDescription .carousel-fade .carousel-inner .active.left,
+  .sectionDescription .carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1; }
+  .sectionDescription .carousel-fade .carousel-inner .next.left,
+  .sectionDescription .carousel-fade .carousel-inner .prev.right {
+    opacity: 1; }
+  .sectionDescription .carousel-fade .carousel-control {
+    z-index: 2; }
+
+/* Sobre Mi - Imagen */
+.cv__img {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  margin-top: 3rem;
+  border-radius: 6px; }
+
+.galeriaTypo img {
+  /* Miniaturas */
+  width: 100%;
+  height: 100%; }
+
+.galeriaTypo .modal {
+  /* Contenedor del modal */
+  margin-top: 13rem; }
+
+.galeriaTypo .modal-content-img {
+  /* Tamaño de la img dentro del popup */
+  width: 100%;
+  height: 100%; }
+
+.galeriaTypo .img-responsive {
+  margin: 8px;
+  transition: 0.5s ease; }
+
+.galeriaTypo .img-responsive:hover {
+  border-radius: 10px; }
+
+.galeriaTypo .multi-item-example-l {
+  position: absolute;
+  color: #564D4A;
+  margin-left: -2rem;
+  padding-top: 16rem;
+  font-size: 1.8rem; }
+
+.galeriaTypo .multi-item-example-r {
+  position: absolute;
+  color: #564D4A;
+  padding-left: 42.5rem;
+  padding-top: 16rem;
+  font-size: 1.8rem; }
+
+/* Carousel dentro de un modal custom */
+.modal-dialog {
+  height: 60%;
+  /* = 60%  .modal-backdrop block*/ }
+
+.modal-content {
+  height: 100%;
+  /* = 100% .modal-dialog block */ }
+
+.xModal {
+  display: flex;
+  margin-top: -2.5rem;
+  margin-left: 3.5rem; }
+
+@media (max-width: 600px) {
+  .intro__img {
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+  .galeriaTypo {
+    padding: 0 1rem; }
+    .galeriaTypo .multi-item-example-l {
+      position: absolute;
+      color: #564D4A;
+      margin-left: -2rem;
+      padding-top: 14rem;
+      font-size: 1rem; }
+    .galeriaTypo .multi-item-example-r {
+      position: absolute;
+      color: #564D4A;
+      padding-left: 19rem;
+      padding-top: 14rem;
+      font-size: 1rem; }
+    .galeriaTypo .modalCarousel {
+      width: 100%; }
+  /*  .xModal{
+        display: flex;
+        width: 2.5rem;
+        margin-top: -1rem;
+        margin-left: 15.2rem;
+     
+        text-align: center;
+        border: none;
+        text-decoration: none;
+        color: $color-white;
+        border-radius: 4px;
+        font-size: 12px;
+        letter-spacing: 2px;
+        outline: none;
+    } */ }
+
+/* Galerias & Main Content en cada html */
+/* Form */
+main .form {
+  grid-area: form; }
+
+main .wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+main .formArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 71.5px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 12px; }
+
+main imgArea {
+  width: 100%; }
+
+main .textoDerecha h2 {
+  font-weight: 700;
+  font-size: 36px;
+  margin: 20px 0 15px;
+  color: #564D4A; }
+
+main .textoDerecha p {
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0 0 30px 0;
+  color: #564D4A; }
+
+main .textoDerecha a {
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 10px 30px; }
+
+main div.imgArea {
+  height: 300px;
+  width: 100%;
+  background: url("../img/email.jpg");
+  background-position: center;
+  background-size: cover; }
+
+main .textoDerecha {
+  margin: 60px 40px; }
+
+main .textoDerecha input {
+  width: 100%;
+  margin-bottom: 15px; }
+
+main .textoDerecha textarea {
+  width: 100%; }
+
+main textarea::placeholder {
+  color: grey;
+  font-size: 0.7rem;
+  font-style: italic; }
+
+@media screen and (min-width: 768px) {
+  div.formArea {
+    flex-direction: row;
+    width: 100%; }
+  div.imgArea {
+    height: 300px;
+    min-width: 360px; }
+  div.textoDerecha {
+    margin: 0 60px;
+    max-width: 640px; } }
+
+@media screen and (min-width: 1024px) {
+  div.formArea {
+    max-width: 1000px; } }
+
+/* Formulario de Contacto */
+/* Footer */
+footer {
+  margin-top: 3rem;
+  justify-content: center;
+  align-items: center; }
+  footer span {
+    font-size: .8rem;
+    color: #444444; }
+
+@media (max-width: 600px) {
+  footer span {
+    display: flex;
+    margin-top: 1rem;
+    gap: 2px;
+    justify-content: center; }
+  header .logoNavv {
+    height: 5rem;
+    display: flex; }
+  header .logoNavv img {
+    height: 3rem;
+    margin-top: 0;
+    margin-left: -2rem; }
+  .navbar {
+    margin-top: -4rem; } }
+
+/* Footer */
+/* Colores */
+/* Colores */
+/* Botones */
+.btnGral, .sectionDescription .sectionDescription__boton, main .textoDerecha a, .carouselItem .btn-outline-warning {
+  border: none;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #BBAF9B;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 0 #564D4A;
+  transition: ease-out 0.3s;
+  font-size: 12px;
+  letter-spacing: 2px;
+  outline: none; }
+
+.btnGralhover, .sectionDescription .sectionDescription__boton:hover, main .textoDerecha a:hover, .carouselItem .btn-outline-warning:hover {
+  box-shadow: inset 160px 0 0 0 #564D4A;
+  cursor: pointer;
+  color: #ffffff; }
+
+.sectionDescription__boton {
+  /* Btn cv - sobremi.html */
+  display: flex;
+  margin: 0 auto;
+  width: 160px;
+  height: 40px;
+  margin-top: 16px; }
+
+/* Botones */
+/* Videos - videos.html*/
+.carouselItem {
+  height: 50%;
+  background-color: white;
+  position: relative;
+  background-position: center;
+  background-size: cover; }
+  .carouselItem img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover; }
+  .carouselItem iframe {
+    width: 100%;
+    height: 30rem; }
+  .carouselItem .modal-footer {
+    background-color: white; }
+
+/* .modal{
+    padding-top: 5rem;
+} */
+/* Videos */

@@ -1,0 +1,36 @@
+/* Videos - videos.html*/
+
+
+.carouselItem{
+    height: 50%;
+    background-color: white;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+  
+
+    img{
+        width: 100%;
+        height:50%;
+        object-fit: cover;
+          }
+   iframe{
+       width: 100%;
+       height: 30rem;
+   }
+   .modal-footer{
+       background-color: white;
+   }
+   .btn-outline-warning{
+    @extend .btnGral;
+    
+
+   }
+   .btn-outline-warning:hover{
+    @extend .btnGralhover;
+   }
+}
+
+/* .modal{
+    padding-top: 5rem;
+} */

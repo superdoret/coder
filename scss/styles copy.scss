@@ -1,0 +1,273 @@
+$color-bgcolor:     #EDEAE7;
+$color-textColor:   #6E6561;
+$color-white:       #ffffff;
+$color-darkBrown:   #564D4A;
+$color-footerColor: #D8D2C9;
+$color-buttonColor: #BBAF9B;
+$color-darker:      #444444;
+$color-h2:          #564D4A;
+$color-h5:          #564D4A;
+
+@import "general";
+@import "header";            /* Header */
+@import "landing";           /* Landing - index.html*/
+@import "galleries";         /* Galleries & Main Content in each html */
+@import "form";
+@import "footer";
+@import "colors";
+
+
+body {
+    height: 100%;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    header {
+        .logoNavv {
+            height: 5rem;
+            display: flex;
+            justify-content: center;    /* align horizontal */
+            align-items: center;        /* align vertical */ 
+        }
+        .logoNavv img{
+            height: 5rem;
+            margin-top: 2rem;
+        }
+    }
+    .navbar a {
+        font-size: 14px;
+        color: $color-darker;
+    }
+    .bg-light{
+        background-color: transparent !important;
+    }
+    .navbar-nav .nav-item .nav-link {
+        margin-top: 1rem;
+    }
+    .navbar-nav .nav-item .nav-link a {
+        color: $color-darkBrown;
+    }
+   
+}
+
+       
+main{
+    .intro__img{
+        width: 80%;    
+    }
+}
+
+
+
+
+
+.sectionDescription {
+   font-size: .8rem;
+   @keyframes fadeIn{
+        from{
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    h5{
+        color: $color-darkBrown;
+        animation: fadeIn 3s;    
+    }
+    h2{
+        color: $color-darkBrown;
+        margin-top: .5rem;
+     }
+    p{
+        color: $color-textColor;
+        animation: fadeIn 3s;
+    }
+    
+    input{
+        display: flex;
+        margin: 0 auto;
+        width: 160px;
+        height: 40px;
+        border: none;
+        color: $color-white;
+        background-color: $color-buttonColor;
+        border-radius: 4px;
+        box-shadow: inset 0 0 0 0 $color-darkBrown;
+        transition: ease-out 0.3s;
+        font-size: 12px;
+        letter-spacing: 2px;
+        outline: none;
+        margin-top: 16px;
+      }
+      
+      input:hover {
+        box-shadow: inset 160px 0 0 0 $color-darkBrown;
+        cursor: pointer;
+        color: $color-white;
+      }
+}
+
+/* Sobre Mi - Imagen */
+.cv__img {
+    display: flex;
+    width: 70%;    
+    margin: auto;
+    margin-top: 3rem;
+    border-radius:6px;
+}
+
+.galeriaTypo {
+    img {                       /* Miniaturas */
+        width: 100%;
+        height:100%;
+    }
+    .modal {                    /* Contenedor del modal */
+        margin-top: 13rem;     
+    }
+    .modal-content-img {        /* Tamaño de la img dentro del popup */
+        width:100%;
+        height:100%;
+    }
+    .img-responsive {
+        margin: 8px;
+        transition: 0.5s ease;
+    }
+    .img-responsive:hover {
+        border-radius: 10px;
+    }
+}
+        
+
+@media (max-width: 600px) {
+    
+    .intro__img{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+   
+}
+
+main{
+    .form {
+        grid-area: form;
+    }
+  
+    .wrapper {
+        height: 100%; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+  
+    .formArea {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5rem;
+        margin-bottom: 71.5px;
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 12px;
+    }
+  
+    imgArea {
+        width: 100%;
+    }
+  
+    .textoDerecha h2 {
+        font-weight: 700;
+        font-size: 36px;
+        margin: 20px 0 15px;
+        color: $color-h5;
+    }
+  
+    .textoDerecha p {
+        font-weight: 300;
+        line-height: 24px;
+        margin: 0 0 30px 0;
+        color: $color-h5;
+    }
+          
+    .textoDerecha a {
+        border: none;
+        text-decoration: none;
+        color: $color-white;
+        background-color: $color-buttonColor;
+        border-radius: 4px;
+        box-shadow: inset 0 0 0 0 $color-darkBrown;
+        transition: ease-out 0.3s;
+        font-size: 12px;
+        letter-spacing: 2px;
+        outline: none;
+        display: inline-block;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        padding: 10px 30px;
+    }
+    .textoDerecha a:hover {
+        box-shadow: inset 160px 0 0 0 $color-darkBrown;
+        cursor: pointer;
+        color: $color-white;
+      }
+
+  
+    div.imgArea {
+        height: 300px;
+        width: 100%;
+        background: url("../img/email.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+  
+    .textoDerecha {
+        margin: 60px 40px;
+    }
+            
+    .textoDerecha input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .textoDerecha textarea {
+        width: 100%;
+    }
+    textarea::placeholder {
+        color: grey;
+        font-size: 0.7rem;
+        font-style: italic;
+    }
+  
+}
+
+@media screen and (min-width: 768px) {
+    div.formArea {
+      flex-direction: row;
+      width: 100%;
+    }
+  
+  div.imgArea {
+    height: 300px;
+    min-width: 360px;
+  } 
+  
+  div.textoDerecha {
+    margin: 0 60px;
+    max-width: 640px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    div.formArea {
+    max-width: 1000px;
+    }
+}
+  
+  /* Probando Carousel dentro de un modal custom */
+  .modal-dialog {
+    height: 60%; /* = 60% of the .modal-backdrop block = %90 of the screen */
+  }
+  .modal-content {
+    height: 100%; /* = 100% of the .modal-dialog block */
+  }
+  
